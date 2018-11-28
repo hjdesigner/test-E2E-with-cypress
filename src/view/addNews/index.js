@@ -17,33 +17,29 @@ const AddNews = () => (
 			</Col>
 		</Row>
 		<Row>
-			<Col xs={12}>
-				<Form>
+			<Form action="/" xs={12}>
+				<Col xs={12}>
 					<FormGroup>
 						<Label for='title'>Titulo</Label>
 						<Input type='text' name='title' id='title' />
 					</FormGroup>
-				</Form>
-			</Col>
-			<Col xs={12}>
-				<Form>
+				</Col>
+				<Col xs={12}>
 					<FormGroup>
 						<Label for='author'>Autor</Label>
 						<Input type='text' name='author' id='author' />
 					</FormGroup>
-				</Form>
-			</Col>
-			<Col xs={12}>
-				<Form>
+				</Col>
+				<Col xs={12}>
 					<FormGroup>
 						<Label for='description'>Descrição</Label>
 						<Input type='textarea' name='description' id='description' />
 					</FormGroup>
-				</Form>
-			</Col>
-			<Col xs={12}>
-				<Button color="primary">Cadastrar</Button>
-			</Col>
+				</Col>
+				<Col xs={12}>
+					<Button color="primary" id="submit">Cadastrar</Button>
+				</Col>
+			</Form>
 		</Row>
 	</Container>
 )
