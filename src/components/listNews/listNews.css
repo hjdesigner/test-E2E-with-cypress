@@ -17,3 +17,6 @@
 .list-news li small {
 	color: #000;
 }
+.post-empty {
+	text-align: center;
+}

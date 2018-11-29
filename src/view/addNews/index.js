@@ -9,7 +9,7 @@ import {
 	Input,
 	Button } from 'reactstrap';
 
-const AddNews = () => (
+const AddNews = ({ handleNewsPost }) => (
 	<Container className='addNews'>
 		<Row>
 			<Col>
@@ -17,7 +17,7 @@ const AddNews = () => (
 			</Col>
 		</Row>
 		<Row>
-			<Form action="/" xs={12}>
+			<Form action="/" onSubmit={handleNewsPost}>
 				<Col xs={12}>
 					<FormGroup>
 						<Label for='title'>Titulo</Label>

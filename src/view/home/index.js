@@ -2,11 +2,11 @@ import React from 'react';
 import { Container, Row, Col  } from 'reactstrap';
 import ListNews from '../../components/listNews';
 
-const Home = () => (
+const Home = ({ list }) => (
 	<Container>
 		<Row>
 			<Col>
-					<ListNews />
+					<ListNews list={list} />
 			</Col>
 		</Row>
 	</Container>
